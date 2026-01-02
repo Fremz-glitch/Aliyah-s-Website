@@ -236,9 +236,13 @@
   });
 
   // WhatsApp order function
-function orderNow(product) {
-  const url = "https://wa.me/message/ORMGR3D3KMFWI1";
+function orderNow() {
+  const phone = "2348074162424"; // Nigeria format (no leading 0)
+  const message = "Hello Ayomide Threads & Wears 💛\nI am interested in ordering:";
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
   window.open(url, "_blank");
+}
+
 }
 
 
